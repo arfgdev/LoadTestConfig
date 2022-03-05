@@ -16,18 +16,6 @@
       "type": "http",
       "args": {
         "method": "GET",
-        "path": "http://riabir.ru:443/",
-        "interval_ms": 2
-      },
-      "client": {
-        "async": true,
-        "proxy_urls": "{{ get_proxylist }}"
-      }
-    },
-    {
-      "type": "http",
-      "args": {
-        "method": "GET",
         "path": "http://ria.ru:443/",
         "interval_ms": 2
       },
