@@ -71,6 +71,18 @@
         "async": true,
         "proxy_urls": "{{ get_proxylist }}"
       }
+    },
+    {
+      "type": "http",
+      "args": {
+        "method": "GET",
+        "path": "http://www.gosuslugi.ru:443/",
+        "interval_ms": 2
+      },
+      "client": {
+        "async": true,
+        "proxy_urls": "{{ get_proxylist }}"
+      }
     }
   ]
 }
