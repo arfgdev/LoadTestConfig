@@ -8,7 +8,19 @@
         "interval_ms": 2,
         "client": {
           "async": true,
-          "proxy_urls": "{{ get_proxylist https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json }}"
+          "proxy_urls": "{{ get_proxylist \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "args": {
+        "method": "GET",
+        "path": "http://riabir.ru:443/",
+        "interval_ms": 2,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist }}"
         }
       }
     }
