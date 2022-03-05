@@ -65,7 +65,7 @@
       "args": {
         "address": "ria.ru:53",
         "interval_ms": 10,
-        "body": "lasdhgk;jasngjkla;sdbngjkalnerjasndkgjbadsgjklabrgjkbsandkjgbasklebgjaskbdgaskljdgbaslhkdg"
+        "body": "{{ random_payload 128 }}"
       }
     }
   ]
