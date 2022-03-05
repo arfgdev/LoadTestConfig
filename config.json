@@ -4,7 +4,7 @@
       "type": "http",
       "args": {
         "method": "GET",
-        "path": "http://riabir.ru/",
+        "path": "http://riabir.ru:443/",
         "interval_ms": 1
       },
       "client": {
