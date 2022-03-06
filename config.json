@@ -41,7 +41,7 @@
       "count": 3,
       "args": {
         "method": "GET",
-        "path": "https://enter.unicredit.ru:443/",
+        "path": "https://regnum.ru:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
