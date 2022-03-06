@@ -5,10 +5,10 @@
       "args": {
         "method": "GET",
         "path": "http://riabir.ru:443/",
-        "interval_ms": 10,
+        "interval_ms": 1,
         "client": {
           "async": true,
-          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+          "proxy_urls": "{{ get_proxylist }}"
         }
       }
     },
@@ -16,7 +16,7 @@
       "type": "http",
       "args": {
         "method": "GET",
-        "path": "http://riabir.ru:443/",
+        "path": "https://riabir.ru/{{ random_payload 10 }}}",
         "interval_ms": 1,
         "client": {
           "async": true,
