@@ -61,6 +61,19 @@
       }
     },
     {
+      "type": "http",
+      "count": 2,
+      "args": {
+        "method": "GET",
+        "path": "http://178.248.237.238:443/",
+        "interval_ms": 1,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist }}"
+        }
+      }
+    },
+    {
       "type": "udp",
       "args": {
         "address": "ria.ru:53",
