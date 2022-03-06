@@ -38,18 +38,7 @@
     },
     {
       "type": "http",
-      "args": {
-        "method": "GET",
-        "path": "https://chbrr.crimea.com:443/",
-        "interval_ms": 1,
-        "client": {
-          "async": true,
-          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
-        }
-      }
-    },
-    {
-      "type": "http",
+      "count": 3,
       "args": {
         "method": "GET",
         "path": "https://enter.unicredit.ru:443/",
