@@ -64,7 +64,7 @@
       "type": "http",
       "args": {
         "method": "GET",
-        "path": "http://87.251.92.27:443/",
+        "path": "https://russia-news.ru:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
