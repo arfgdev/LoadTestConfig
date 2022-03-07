@@ -51,61 +51,14 @@
     },
     {
       "type": "http",
+      "count": 10,
       "args": {
         "method": "GET",
-        "path": "https://russia-news.ru:443/",
+        "path": "https://tass.ru:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
           "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
-        }
-      }
-    },
-    {
-      "type": "http",
-      "args": {
-        "method": "GET",
-        "path": "http://193.104.87.248:80/",
-        "interval_ms": 1,
-        "client": {
-          "async": true,
-          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
-        }
-      }
-    },
-    {
-      "type": "http",
-      "args": {
-        "method": "GET",
-        "path": "http://194.84.25.50:80/",
-        "interval_ms": 1,
-        "client": {
-          "async": true,
-          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
-        }
-      }
-    },
-    {
-      "type": "http",
-      "args": {
-        "method": "GET",
-        "path": "http://193.104.87.251:80/",
-        "interval_ms": 1,
-        "client": {
-          "async": true,
-          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
-        }
-      }
-    },
-    {
-      "type": "http",
-      "args": {
-        "method": "GET",
-        "path": "http://ruspolitnews.ru:443/",
-        "interval_ms": 1,
-        "client": {
-          "async": true,
-          "proxy_urls": "{{ get_proxylist }}"
         }
       }
     },
