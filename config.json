@@ -51,10 +51,23 @@
     },
     {
       "type": "http",
-      "count": 100,
+      "count": 20,
       "args": {
         "method": "GET",
         "path": "https://tass.ru:443/",
+        "interval_ms": 1,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "count": 20,
+      "args": {
+        "method": "GET",
+        "path": "https://tass.ru:443/{{ random_payload 10 }}",
         "interval_ms": 1,
         "client": {
           "async": true,
