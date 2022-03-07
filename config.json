@@ -54,7 +54,7 @@
       "count": 20,
       "args": {
         "method": "GET",
-        "path": "https://tass.ru:443/",
+        "path": "https://185.157.96.145:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
@@ -67,7 +67,7 @@
       "count": 20,
       "args": {
         "method": "GET",
-        "path": "https://tass.ru:443/{{ random_payload 10 }}",
+        "path": "https://185.157.96.145:443/{{ random_payload 10 }}",
         "interval_ms": 1,
         "client": {
           "async": true,
